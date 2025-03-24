@@ -6,6 +6,8 @@ import Layout from './Layout.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Contactus from './components/Contactus';
+import User from './components/User';
+import Github from './components/Github';
 
 // const router = createBrowserRouter([
 //   {
@@ -29,7 +31,10 @@ const router = createBrowserRouter(
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contactus" element={<Contactus/>} />
+      <Route path="user/:userid" element={<User/>} />
+      <Route path="github" element={<Github/>} />
     </Route>
+    
   )
 );
 
